@@ -20,6 +20,6 @@ python main.py
 
 And you're done
 
-## Licesne
+## License
 
 Licensed under the official AvinoamCo license (jk it's just the MIT license)
