@@ -5,6 +5,33 @@ class BasicSlime(object):
         self.can_cyber = can_cyber
         self.is_cyber_unlocked = False
 
+    def do(self, activity):
+        if activity == "play":
+            self.play()
+        elif activity == "calculate":
+            operation = input("Please enter the operation you'd like to use (+, -, *, /): ")
+            num1 = int(input("Please enter the first number: "))
+            num2 = int(input("Please enter the second number: "))
+
+            self.calculate(operation, num1, num2)
+        elif activity == "trigo" or activity == "trigonometry":
+            operation = input("Please enter the operation you'd like to use (cos, sin, tan): ")
+            angle = int(input("Please enter the angle you'd like to calculate: "))
+            is_deg = input("Are you using degrees? ")
+
+            if is_deg.lower() == "yes" or is_deg.lower() == "y":
+                is_deg = True
+            else:
+                is_deg = False
+
+            self.trigo(operation, angle, is_deg)
+        elif activity == "unlock secret power":
+            self.unlock_secret_power()
+        elif activity == "cyber":
+            self.cyber()
+        else:
+            print("Your slime doesn't recognize this kind of activity!")
+
     def play(self):
         print("You are playing with the slime!")
         print("You are \"enjoying\"!")
