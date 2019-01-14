@@ -8,7 +8,12 @@ This is a high quality slime made out of 100% clean Cyber.
     
     You can install it from [Python's website](https://www.python.org/downloads/)
 
-TBA
+2. **Numpy >= 1.16.0**
+
+    You can install it using pip:
+    ```
+    pip install numpy
+    ```
 
 ## Running AvinoamCo's Slime
 
