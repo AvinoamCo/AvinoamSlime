@@ -3,6 +3,9 @@ from lib.CheapSlime import CheapSlime
 slime_types = ["Cheap slime", "Mediocre slime (Unavaliable)", "Epic slime (Unavaliable)"]
 
 def intro():
+    """The intro of the story
+    """
+
     print("Welcome the official AvinoamCo's Slime store!")
     print("We have a very large variety of slimes:", end=" ")
     
@@ -15,6 +18,9 @@ def intro():
     choose_slime()
     
 def choose_slime():
+    """Continuing the story with choosing the slime
+    """
+
     did_choose = False
     slime = None
     
@@ -41,6 +47,12 @@ def choose_slime():
     use_slime(slime)
 
 def use_slime(slime):
+    """Using the chosen slime
+    
+    Args:
+        slime (BasicSlime): The chosen slime
+    """
+
     while True:
         activity = input("what would you like to do with your slime? ")
 
